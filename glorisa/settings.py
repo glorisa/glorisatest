@@ -78,13 +78,7 @@ WSGI_APPLICATION = 'glorisa.wsgi.application'
 
 DATABASES = {
     'default': {
-			'HOST': 'ec2-54-83-26-65.compute-1.amazonaws.com',
-            'ENGINE': 'django.db.backends.postgresql',
-            'NAME': 'dbfnnrm6lr11ug',
-            'USER': 'jexdhiyupuhmmc',
-            'PASSWORD': 'b8bf035a8bbcb722540294464a247cdd90af68767163db7588dab566f907debd',
-			'PORT': '5432',
-    }
+			}
 }
 
 

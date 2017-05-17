@@ -35,7 +35,7 @@ def contactform(request):
 
         subject = subject
         message = message + '\n' + "Name: " + name + '\n' + "company: " + company + '\n' + "phone: " + phone + '\n' + "email: " + email
-        send_mail(subject, message, settings.EMAIL_HOST_USER, ['gargsarthak30@gmail'], fail_silently=True)
+        send_mail(subject, message, settings.EMAIL_HOST_USER, ['gargsarthak30@gmail.com'], fail_silently=True)
         return HttpResponseRedirect(reverse('mail_success'))
 
 
