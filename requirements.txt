@@ -11,8 +11,8 @@ queuelib==1.4.2
 recordtype==1.1
 requests==2.8.0
 requests-oauthlib==0.6.0
-six==1.10.0
 urlparse2==1.1.1
 w3lib==1.13.0
 whitenoise==3.2.1
 numpy==1.10.4
+six==1.10.0
