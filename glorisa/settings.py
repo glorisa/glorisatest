@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '5^lt&%7*7znk$@i=9y$d%mddd^h9)kio74%0*r8h3f!v^75m=n'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["*"]
 
@@ -78,8 +78,12 @@ WSGI_APPLICATION = 'glorisa.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+			'HOST': 'ec2-54-83-26-65.compute-1.amazonaws.com',
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': 'dbfnnrm6lr11ug',
+            'USER': 'jexdhiyupuhmmc',
+            'PASSWORD': 'b8bf035a8bbcb722540294464a247cdd90af68767163db7588dab566f907debd',
+			'PORT': '5432',
     }
 }
 
