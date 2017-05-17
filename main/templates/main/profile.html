@@ -1,0 +1,23 @@
+{% extends 'main/_newbase.html' %}
+{% block title %}{{member_info.name}}{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <div style = "margin-top:100px;">
+    <div class = "row">
+        <div class = "col-md-3 col-sm-3">
+            <img class = "img-responsive" src = "{{member_info.photo}}"><br/>
+            <h3 style = "color:black;">
+                {{member_info.name}}
+                </h3>
+        </div>
+            <div class = "col-md-1 col-sm-1"></div>
+            <div class = "col-md-6 col-sm-3" >
+                <h3>About</h3>
+                <p>{{member_info.about}}</p>
+            </div>
+        </div>
+        </div>
+</div>
+{% endblock %}

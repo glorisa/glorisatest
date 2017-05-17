@@ -1,0 +1,77 @@
+<section id ="contact" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="header-section text-center">
+            <h2>Contact Us</h2>
+            <hr class="bottom-line">
+          </div>
+          <form action="{% url 'contactForm' %}" method="post" role="form" class="contactForm">
+                  {% csrf_token %}
+              <div class="col-md-6 col-sm-6 col-xs-12 left">
+                <div class="form-group">
+                    <input type="text" name="name" class="form-control form" id="name" placeholder="Your Name" required/>
+                </div>
+                  <div class="form-group">
+                    <input type="text" name="company" class="form-control form" id="company" placeholder="Company's Name" required/>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="phone" class="form-control form" id="phone" placeholder="Your Phone Number" required/>
+                </div>
+
+                  <div class="form-group">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required/>
+                </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required/>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6 col-xs-12 right">
+                <div class="form-group">
+                    <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
+                </div>
+              </div>
+
+              <div class="col-xs-12">
+                <!-- Button -->
+                <button type="submit" id="submit" name="submit" class="form contact-form-button light-form-button oswald light">SEND EMAIL</button>
+              </div>
+          </form>
+        </div>
+          <div class="row">
+          <div class="header-section text-center">
+            <h2>Other Details</h2>
+            <hr class="bottom-line">
+          </div>
+              <div class = "col-md-3 col-sm-3">
+                <h4>Corporate Office</h4>
+                  <p>Glorisa Technovation India Private Limited <br/>
+                    Unit No.: 501, 5th Floor, Tower-1, Highway Towers, Plot No.: A-13/2, 3 & 4, Sector-62<br/>
+                    Noida-201 309<br/>
+                    Uttar Pradesh, INDIA
+                  </p>
+              </div>
+              <div class = "col-md-3 col-sm-3">
+                <h4>Glorisa Representatives</h4>
+                  <p>Pune, INDIA<br/>
+                    Chandigarh, INDIA<br/>
+                    Mathura, INDIA<br/>
+                    Chicago, USA
+                  </p>
+              </div>
+              <div class = "col-md-3 col-sm-3">
+                <h4>Contact Info.</h4>
+                  <p>info@glorisatechnovation.com<br/>
+                    Helpdesk: +91 9971-61-1579<br/>
+                    Service:  +91 9971-61-1584<br/>
+                  </p>
+              </div>
+        <div class = "col-md-3 col-sm-3">
+                <h4>Business Hours</h4>
+                  <p><b>Monday-Friday:</b> 9:30am to 5:30pm<br/>
+                      (GMT +5:30, IST)<br/>
+                      <b>Sunday: </b>Closed
+                  </p>
+              </div>
+          </div>
+      </div>
+    </section>
